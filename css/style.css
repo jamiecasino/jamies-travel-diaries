@@ -1,0 +1,311 @@
+/* ========================================
+   JAMIE'S TRAVEL DIARIES
+   Main Stylesheet
+   ======================================== */
+
+/* GENERAL PAGE */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #FFF7FD;
+  color: #4A3446;
+}
+
+/* HEADER */
+header {
+  background-color: #FDB9F1;
+  color: #4A3446;
+  text-align: center;
+  padding: 35px 20px 40px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 42px;
+}
+
+header p {
+  margin: 12px 0 25px;
+  font-size: 18px;
+}
+
+/* NAVIGATION */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 5px;
+}
+
+nav a {
+  display: inline-block;
+  background-color: #FEE6FA;
+  color: #4A3446;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 22px;
+  border: 2px solid #FFF7FD;
+  border-radius: 10px;
+}
+
+nav a:hover {
+  background-color: #FFF7FD;
+  color: #A94C91;
+  border-color: #A94C91;
+}
+
+/* MAIN CONTENT */
+main {
+  width: 85%;
+  max-width: 1100px;
+  margin: 38px auto;
+}
+
+/* CONTENT CARDS */
+section {
+  background-color: #FEE6FA;
+  margin-bottom: 30px;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+section:hover {
+  box-shadow: 0 5px 15px rgba(169, 76, 145, 0.15);
+}
+
+/* HEADINGS */
+h2 {
+  color: #A94C91;
+  margin-top: 0;
+}
+
+h3 {
+  color: #A94C91;
+}
+
+/* PARAGRAPHS */
+p {
+  line-height: 1.7;
+}
+
+/* TRAVEL PHOTOS */
+section img {
+  width: 100%;
+  max-width: 700px;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  margin: 20px auto;
+  border-radius: 12px;
+}
+
+/* FOOD RATINGS */
+strong {
+  color: #A94C91;
+}
+
+/* FOOTER */
+footer {
+  background-color: #FDB9F1;
+  color: #4A3446;
+  text-align: center;
+  padding: 18px;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* HOMEPAGE PHOTO GALLERY */
+.home-gallery {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin: 25px 0;
+}
+
+.home-gallery img {
+  width: 31%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* WHERE I HAVE BEEN MAP */
+.map-section {
+  text-align: center;
+}
+
+.world-map {
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  display: block;
+  margin: 30px auto;
+}
+
+/* BUTTONS FOR COUNTRIES */
+.places-visited {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.place {
+  position: relative;
+  background-color: #FFF7FD;
+  color: #A94C91;
+  font-weight: bold;
+  padding: 12px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Changes the country button when the mouse is over it */
+.place:hover {
+  background-color: #FDB9F1;
+}
+
+/* HIDDEN TRAVEL NOTE */
+.place-note {
+  visibility: hidden;
+  position: absolute;
+  width: 210px;
+  background-color: #4A3446;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-size: 13px;
+  font-weight: normal;
+}
+
+/* PLACE NOTES */
+.place:hover .place-note {
+  visibility: visible;
+}
+
+/* ABOUT ME FAVORITES */
+.about-favorites {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.about-favorites span {
+  background-color: #FEE6FA;
+  color: #A94C91;
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 20px;
+}
+
+/* MUSIC PAGE */
+.album-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.album {
+  width: 220px;
+  text-align: center;
+}
+
+.album img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.album img:hover {
+  transform: scale(1.05);
+}
+
+.album h3 {
+  color: #A94C91;
+  margin-bottom: 5px;
+}
+
+.album p {
+  margin-top: 0;
+}
+
+.song-list {
+  line-height: 2;
+}
+
+/* SOCIAL LINKS */
+.social-links {
+    text-align: center;
+    margin: 30px auto;
+    width: 100%;
+}
+
+.social-links h3 {
+    color: #A94C91;
+    margin-bottom: 20px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-buttons a {
+    display: inline-block;
+    background-color: #FDB9F1;
+    color: #A94C91;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 22px;
+    border-radius: 25px;
+}
+
+.social-buttons a:hover {
+    background-color: #A94C91;
+    color: #FEE6FA;
+}
+
+/* APPLE MUSIC LINK */
+.apple-music {
+  text-align: center;
+}
+
+.music-link {
+  display: inline-block;
+  background-color: #FDB9F1;
+  color: #4A3446;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 22px;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+.music-link:hover {
+  background-color: #A94C91;
+  color: white;
+  transform: translateY(-2px);
+}
